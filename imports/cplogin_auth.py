@@ -5,16 +5,14 @@ import json
 import time
 import httpx
 
-from openai import AsyncOpenAI
-from anthropic import AsyncAnthropic
-from imports.enrich_logging import logging
+from imports.cplogin_logging import logging
 
-logger = logging.getLogger("EnrichProvider")
+logger = logging.getLogger("CPLoginAuth")
 
 class CopilotAuthManager:
     """Handles GitHub Device Auth, OAuth tokens, and Copilot Token refreshing."""
     CLIENT_ID = "01ab8ac9400c4e429b23" # Hardcoded client ID for GitHub Copilot extension (publicly known)
-    TOKEN_FILE = os.path.expanduser("~/.config/enrich_mcp/oauth_token.json")
+    TOKEN_FILE = os.path.expanduser("~/.config/cplogin/oauth_token.json")
 
     COMMON_HEADERS = {
         "User-Agent": "GithubCopilot/1.388.0",

@@ -1,6 +1,6 @@
 import asyncio
 
-from imports.enrich_provider import CopilotAuthManager
+from imports.cplogin_auth import CopilotAuthManager
 
 async def login_and_print():
     auth_manager = CopilotAuthManager()
