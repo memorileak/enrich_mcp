@@ -17,7 +17,7 @@ class CopilotAuthManager:
     COMMON_HEADERS = {
         "User-Agent": "GithubCopilot/1.388.0",
         "Editor-Plugin-Version": "copilot/1.388.0",
-        "Editor-Version": "vscode/1.141.2",
+        "Editor-Version": "vscode/1.143.1",
         "Copilot-Integration-Id": "vscode-chat"
     }
 
